@@ -51,7 +51,7 @@
 body {
   margin: 2em auto 2em auto;
   width: 80%;
-  font-family: "museo_sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 h1#title {
@@ -66,9 +66,14 @@ nav {
 
 h2 {
     font-size: 2em;
+    margin-bottom:0.2em;
 }
 h3 {
     font-size: 1.43em;
+}
+h5 {
+  font-style: italic;
+  font-size: 0.85em;
 }
 h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -90,9 +95,18 @@ ul {
   padding-left: 25px;
 }
 
-#contact {
+#contact td > a {
+  text-decoration: none;
+}
+
+.third {
   width: 100%;
 }
-#contact td {
-  width: 50%;
+.third td {
+  width: 33%;
+}
+
+ref {
+  position: absolute; /*to avoid line spacing issues with font-size*/
+  font-size: 1.2em;
 }
