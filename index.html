@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="main.css"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
+<body id="">
   <h1 id="title">Sugandha Singla</h1>
   <nav>
     <a href="#experience">Research Assistant</a> | <a href="#projects">Projects</a> | <a href="#internships">Internships</a> | <a href="#additional">Additional Learning</a> | <a href="#pors">Positions of Responsibility</a> | <a href="#extracurrics">Extra Curricular Activities</a>
+    <a href="#"><img src="nav-icon-top.png" id="nav-icon-top"/></a>
   </nav>
   <section>
     <table id="contact" class="third">
@@ -118,6 +119,19 @@ Industrial Green Chemistry World Symposium’11</li>
       <li>Presented The Patrons of Weaving- the forgotten ones, a study showing deterring state of Weavers in India</li>
       <li>Highly appreciated by discussion panel: UNIC India Director, Nitin Paranjpe, Shaheen Mistri, Masaba Gupta</li>
       </ul> 
-  </section> 
+  </section>
+  <script>
+    (function() {
+      nit = document.getElementById('nav-icon-top');
+      window.onscroll = function() {
+        if (window.pageYOffset == 0) {
+          nit.style.display="none";
+        } else if (nit.style.display) {
+          nit.style.display=null;
+        }
+      }
+      window.onscroll();
+    })();
+  </script>
 </body>
 </html>
