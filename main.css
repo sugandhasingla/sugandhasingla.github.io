@@ -113,16 +113,16 @@ ul {
 .third {
   width: 100%;
 }
-.third td {
-  width: 33%;
+.third td.contact{
+  width: 27%;
 }
 
- .columnar {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    white-space: nowrap;
-  }
+.columnar {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  white-space: nowrap;
+}
 
 .refspan {
   position: relative;
@@ -135,11 +135,22 @@ ul {
  bottom: -0.3em;
 }
 
+.dp-wrap {
+  text-align: center;
+  width: 19%;
+}
+.dp {
+  width: 150px;
+}
+
 @media (max-width: 620px) {
   .third td {
     width: 100%;
     display: block;
     margin: 0.8em 0 0.8em 0;
+  }
+  td.dp-wrap {
+      text-align: left;
   }
 }
 
