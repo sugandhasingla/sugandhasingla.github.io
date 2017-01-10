@@ -131,7 +131,7 @@ ul {
 
 .refspan > ref { /*to avoid line spacing issues with font-size*/
   font-size: 1.2em;
- position: absolute; 
+ position: absolute;
  bottom: -0.3em;
 }
 
